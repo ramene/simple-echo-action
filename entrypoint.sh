@@ -2,6 +2,8 @@
 
 set -exuo pipefail
 
+env 
+
 echo "$1"
 time=$(date)
 
