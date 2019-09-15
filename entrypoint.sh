@@ -3,7 +3,7 @@
 set -e
 
 if [ ! -z "$GITHUB_WORKFLOW" ]; then
-    echo "Exported KUBECONFIG >>>>>>>>>: ${KUBECONFIG}"
+    echo "Exported KUBECONFIG >>>>>>>>>: ${K8S_CONFIG}"
 else
     "Theory disproven!"
 fi
