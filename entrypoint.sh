@@ -1,19 +1,18 @@
 #!/bin/sh -l
 
-set -exuo pipefail
- ${PULUMIFY_BUILD:-}
-echo "${PULUMI_ROOT:-}"
-echo "\`${PULUMI_ROOT:-}\`"
-echo "${GITHUB_EVENT_NAME:-}"
-echo "\`${GITHUB_EVENT_NAME:-}\`"
+set -e
 
-if [ ! -z "${PULUMI_ROOT}" ]; then
-    echo "\`${PULUMI_ROOT}\`"
+if [ ! -z "$GITHUB_WORKFLOW" ]; then
+    echo "\`${KUBECONFIG}\`"
+else
+    "Theory disproven!"
+fi
+
+if [ ! -z "${GITHUB_EVENT_NAME}" ]; then
+    echo "\`${GITHUB_EVENT_NAME}\`"
 else
     echo "No cigar"
 fi
-
-PULUMI_CI_SYSTEM
 
 echo "$1"
 time=$(date)
