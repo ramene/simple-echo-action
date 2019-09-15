@@ -7,7 +7,7 @@ env
 echo "$1"
 time=$(date)
 
-tmp=$(RUNNER_TEMP)
-
+echo ">>>>>>>>>>>>>>>>>>>>>> $RUNNER_WORKSPACE"
+tmp="^^^^^^^^ asset values ^^^^^^^^"
 echo ::set-output name=time::$time
 echo ::set-output name=tmp::$tmp
