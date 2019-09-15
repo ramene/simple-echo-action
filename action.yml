@@ -9,6 +9,8 @@ inputs:
 outputs:
   time: # id of output
     description: 'The timestamp of the broacasted message'
+  k8sconfig:
+    description: 'The Kubernetes Config'
 runs:
   using: 'docker'
   image: 'Dockerfile'

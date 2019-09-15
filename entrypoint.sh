@@ -16,4 +16,8 @@ fi
 
 echo "$1"
 time=$(date)
+
+export K8S_CONFIG='testing passing values around'
+
 echo ::set-output name=time::$time
+echo ::set-output name=K8S_CONFIG::$K8S_CONFIG
