@@ -9,7 +9,7 @@ inputs:
 outputs:
   time: # id of output
     description: 'The timestamp of the broacasted message'
-  K8S_CONFIG:
+  k8s_config:
     description: 'The Kubernetes Config'
 runs:
   using: 'docker'
