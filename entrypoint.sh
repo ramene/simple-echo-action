@@ -1,10 +1,10 @@
 #!/bin/sh -l
 
-set -exuo pipefail
+set -ex
 
 env 
 
-ls -alF ${RUNNER_TEMP}
+ls -alF "$RUNNER_TEMP"
 
 echo "$1"
 time=$(date)
