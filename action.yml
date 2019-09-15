@@ -1,15 +1,16 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+# action.yml
+name: 'Broadcast'
+description: 'Broadcast a message and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  broadcast:  # id of input
+    description: 'What would you like to broadcast?'
     required: true
-    default: 'World'
+    default: ''
 outputs:
   time: # id of output
-    description: 'The time we we greeted you'
+    description: 'The timestamp of the broacasted message'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.broadcast }}
