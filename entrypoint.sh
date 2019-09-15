@@ -1,10 +1,11 @@
 #!/bin/sh -l
 
-set -e
+set -exuo pipefail
 
 echo "$1"
 time=$(date)
 
+env
 # export K8S_CONFIG='testing passing values around'
 
 echo ::set-output name=time::$time
