@@ -20,10 +20,10 @@ echo "DID EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${KUBECONFIG}"
 
 echo " KUBECONFIG: >> ${KUBECONFIG}"
 
-export KUBECONFIG="${KUBECONFIG}"
+export KUBECONFIG="${OUTPUT_KUBECONFIG}"
 
 # KUBECONFIG_IMPORTED="${KUBECONFIG}"
 
-echo "DID EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${KUBECONFIG}"
+echo "DID EXPORT >>>>>>>>>>>> OUTPUT_KUBECONFIG: <<<<<<<< ${OUTPUT_KUBECONFIG}"
 
 echo ::set-output name=time::$time
