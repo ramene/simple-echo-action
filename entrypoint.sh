@@ -10,7 +10,7 @@ echo "$2"
 
 time=$(date)
 
-pass_var="$2"
+pass_var='bar'
 
 echo ::set-output name=time::$time
 echo ::set-output name=foo::$pass_var

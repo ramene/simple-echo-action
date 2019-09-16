@@ -5,16 +5,17 @@ inputs:
   broadcast:  # id of input
     description: 'What would you like to broadcast?'
     required: true
-    default: ''
+    default: 'broadcast default'
   some_var:
-    description: ''
-    required: false
-    default: ''
+    description: 'some_var description'
+    required: true
+    default: 'some_var default'
 outputs:
   time: # id of output
     description: 'The timestamp of the broacasted message'
   foo:
     description: 'Pulumi Outputs'
+    default: '_foo_ output default'
 runs:
   using: 'docker'
   image: 'Dockerfile'
