@@ -6,7 +6,7 @@ inputs:
     description: 'What would you like to broadcast?'
     required: true
     default: ''
-  new_value:
+  some_var:
     description: 'still hacking away at the env vars'
     required: false
     default: ''
