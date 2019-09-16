@@ -27,4 +27,4 @@ echo "**NEW** KUBECONFIG: >> ${OUTPUTFILE}"
 echo "DID EXPORT >>>>>>>>>>>> OUTPUTFILE: <<<<<<<< ${KUBECONFIG}"
 
 echo ::set-output name=time::$time
-echo ::set-output name=time::$tmp
+echo ::set-output name=tmp::$tmp
