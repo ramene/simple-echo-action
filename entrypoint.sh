@@ -8,10 +8,9 @@ echo "$1"
 
 echo "$2"
 
-export SOME_VAR = $SOME_VAR 
-
 time=$(date)
-pass_var="$SOME_VAR"
+
+pass_var="$2"
 
 cd infra
 ls -alFR
