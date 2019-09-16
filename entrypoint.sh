@@ -8,6 +8,8 @@ echo "$1"
 
 echo "$2"
 
+export SOME_VAR = $SOME_VAR 
+
 time=$(date)
 pass_var="$SOME_VAR"
 
