@@ -2,6 +2,8 @@
 
 set -exou
 
+env 
+
 echo "$1"
 
 echo "$2"
