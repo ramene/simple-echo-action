@@ -1,6 +1,6 @@
 #!/bin/sh -l
 
-set -exou
+set -exou pipefail
 
 env 
 
