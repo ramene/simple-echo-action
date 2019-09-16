@@ -12,8 +12,8 @@ echo "Do I see you?: >>  ${OUTPUT_KUBECONFIG}"
 echo "Original INPUT_BROADCAST: >> ${INPUT_BROADCAST}"
 echo "\`$INPUT_BROADCAST\`"
 
-export INPUT_BROADCAST = "${GITHUB_SHA}"
-echo " NEW >>>>>>>>>>>>>>>>>>>>  \`${INPUT_BROADCAST}\'"
+OUTPUT_BROADCAST=${OUTPUT_KUBECONFIG}
+echo " NEW >>>>>>>>>>>>>>>>>>>>  \`${OUTPUT_BROADCAST}\'"
 
 echo ::set-output name=time::$time
 echo ::set-output name=tmp::$tmp
