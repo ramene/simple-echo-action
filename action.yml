@@ -6,12 +6,16 @@ inputs:
     description: 'What would you like to broadcast?'
     required: true
     default: ''
+  new_value:
+    description: 'still hacking away at the env vars'
+    required: false
+    default: ''
 outputs:
   time: # id of output
     description: 'The timestamp of the broacasted message'
-  tmp:
+  foo:
     description: 'Pulumi Outputs'
-    default: 'default'
+    default: 'bar'
 runs:
   using: 'docker'
   image: 'Dockerfile'
