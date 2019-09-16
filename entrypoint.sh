@@ -11,7 +11,7 @@ echo "$2"
 time=$(date)
 pass_var="$SOME_VAR"
 
-cd $RUNNER_TEMP
+# cd $RUNNER_TEMP
 ls -alF
 
 echo ::set-output name=time::$time
