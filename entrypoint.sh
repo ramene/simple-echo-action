@@ -13,10 +13,9 @@ echo "Do I see you?: >> ${OUTPUT_BROADCAST}"
 echo "Original INPUT_BROADCAST: >> ${INPUT_BROADCAST}"
 echo "\`$INPUT_BROADCAST\`"
 
-set INPUT_BROADCAST="WTF!"
+export INPUT_BROADCAST="WTF!"
 
-set OUTPUT_BROAD="${INPUT_BROADCAST}"
-echo " NEW >>>>>>>>>>>>>>>>>>>>  \`${OUTPUT_BROAD}\'"
+export OUTPUT_BROAD="${INPUT_BROADCAST}"
+echo " NEW >>>>>>>>>>>>>>>>>>>>  ${OUTPUT_BROAD}"
 
 echo ::set-output name=time::$time
-echo ::set-output name=tmp::$tmp
