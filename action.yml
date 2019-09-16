@@ -11,6 +11,7 @@ outputs:
     description: 'The timestamp of the broacasted message'
   tmp:
     description: 'Pulumi Outputs'
+    default: ${{ GITHUB_ACTION }}
 runs:
   using: 'docker'
   image: 'Dockerfile'

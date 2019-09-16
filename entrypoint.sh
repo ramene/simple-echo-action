@@ -6,25 +6,9 @@ env
 
 echo "$1"
 time=$(date)
+tmp='hello world'
 
-# echo "Do I see you?: >> ${OUTPUT_KUBECONFIG}"
-# echo "Do I see you?: >> ${OUTPUT_BROADCAST}"
-
-echo "ORIGINAL INPUT_BROADCAST: >> ${INPUT_BROADCAST}"
-
-export KUBECONFIG="${INPUT_BROADCAST}"
-
-echo "DID EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${KUBECONFIG}"
-
-#
-
-export KUBECONFIG="${OUTPUTFILE}"
-
-tmp="${KUBECONFIG}"
-
-echo "**NEW** KUBECONFIG: >> ${OUTPUTFILE}"
-
-echo "DID EXPORT >>>>>>>>>>>> OUTPUTFILE: <<<<<<<< ${KUBECONFIG}"
+echo $PATH
 
 echo ::set-output name=time::$time
 echo ::set-output name=tmp::$tmp
