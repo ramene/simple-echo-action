@@ -12,10 +12,18 @@ time=$(date)
 
 echo "ORIGINAL INPUT_BROADCAST: >> ${INPUT_BROADCAST}"
 
-# echo "DID NOT EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${INPUT_BROADCAST}"
-
 export KUBECONFIG="${INPUT_BROADCAST}"
 
 echo "DID EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${KUBECONFIG}"
+
+#
+
+echo " KUBECONFIG: >> ${KUBECONFIG}"
+
+export KUBECONFIG_IMPORTED="${KUBECONFIG}"
+
+# KUBECONFIG_IMPORTED="${KUBECONFIG}"
+
+echo "DID EXPORT >>>>>>>>>>>> INPUT_BROADCAST: <<<<<<<< ${KUBECONFIG_IMPORTED}"
 
 echo ::set-output name=time::$time
