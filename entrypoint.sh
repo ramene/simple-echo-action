@@ -9,7 +9,7 @@ echo "$1"
 echo "$2"
 
 time=$(date)
-some_var="$GITHUB_EVENT_NAME"
+pass_var="$SOME_VAR"
 
 echo ::set-output name=time::$time
-echo ::set-output name=foo::$some_var
+echo ::set-output name=foo::$pass_var
