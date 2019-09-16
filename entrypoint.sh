@@ -7,10 +7,12 @@ env
 echo "$1"
 time=$(date)
 
-echo "Original INPUT_BROADCAST: ${INPUT_BROADCAST}"
+echo "Do I see you?: >>  ${OUTPUT_KUBECONFIG}"
+
+echo "Original INPUT_BROADCAST: >> ${INPUT_BROADCAST}"
 echo "\`$INPUT_BROADCAST\`"
 
-INPUT_BROADCAST = "\`${GITHUB_SHA}\`"
+export INPUT_BROADCAST = "${GITHUB_SHA}"
 echo " NEW >>>>>>>>>>>>>>>>>>>>  \`${INPUT_BROADCAST}\'"
 
 echo ::set-output name=time::$time
