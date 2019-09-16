@@ -7,7 +7,7 @@ inputs:
     required: true
     default: ''
   some_var:
-    description: 'still hacking away at the env vars'
+    description: ''
     required: false
     default: ''
 outputs:
@@ -15,10 +15,9 @@ outputs:
     description: 'The timestamp of the broacasted message'
   foo:
     description: 'Pulumi Outputs'
-    default: 'foobar'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.broadcast }}
-    - ${{ inputs.new_value }}
+    - ${{ inputs.some_var }}
