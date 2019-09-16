@@ -6,7 +6,7 @@ env
 
 echo "$1"
 time=$(date)
-tmp="$PULUMI_ROOT"
+tmp="$GITHUB_EVENT_NAME"
 
 echo ::set-output name=time::$time
 echo ::set-output name=tmp::$tmp
