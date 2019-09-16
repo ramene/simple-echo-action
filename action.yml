@@ -15,7 +15,7 @@ outputs:
     description: 'The timestamp of the broacasted message'
   foo:
     description: 'Pulumi Outputs'
-    default: ${{ steps.message.outputs.foo }}"
+    default: ${{ inputs.broadcast }}
 runs:
   using: 'docker'
   image: 'Dockerfile'
