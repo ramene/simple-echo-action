@@ -21,3 +21,4 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.broadcast }}
+    - ${{ inputs.new_value }}
