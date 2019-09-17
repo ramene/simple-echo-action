@@ -11,7 +11,7 @@ inputs:
     required: true
     default: 'some_var default'
 outputs:
-  time: # id of output
+  time:
     description: 'The timestamp of the broacasted message'
   foo:
     description: 'Pulumi Outputs'
