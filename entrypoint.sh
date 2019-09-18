@@ -1,7 +1,7 @@
 #!/bin/sh -l
 
 # https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
-set -Eexou pipefail
+set -exou pipefail
 
 env
 
